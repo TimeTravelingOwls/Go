@@ -31,7 +31,6 @@ def go(direction):
   }
   cases.get(direction, lambda: print("Um, I don't understand\n"))()
 
-x = 1
 while True:
   direction = input("Which direction? ")
   go(direction)
