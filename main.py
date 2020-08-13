@@ -16,7 +16,6 @@ def xyz(axis, delta = 0):
     location[axis] = location[axis] + delta
   print(location)
 
-
 def go(direction):
   global location
 
@@ -31,6 +30,10 @@ def go(direction):
   }
   cases.get(direction, lambda: print("Um, I don't understand\n"))()
 
-while True:
+# This is for testing - it asks for a direction
+# and updates the global location variable.
+# Remove quotes to run
+''' while True:
   direction = input("Which direction? ")
   go(direction)
+ '''
